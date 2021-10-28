@@ -12,5 +12,8 @@ const webpackConfig = require('./webpack.config')
  */
 
 mix.ts('resources/js/app.ts', 'public/js').vue({ version: 3 })
-  .postCss('resources/css/app.css', 'public/css', [])
+  .postCss('resources/css/app.css', 'public/css', [
+    require('tailwindcss'),
+    require('autoprefixer')
+  ])
   .webpackConfig(webpackConfig)
