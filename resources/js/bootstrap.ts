@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import * as _ from 'lodash'
 import axios from 'axios'
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
