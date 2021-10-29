@@ -4,9 +4,9 @@
         "es2021": true
     },
     "extends": [
+        "airbnb-base",
         "plugin:vue/essential",
-        "plugin:prettier-vue/recommended",
-        "standard"
+        "plugin:prettier-vue/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": 13,
@@ -26,6 +26,11 @@
       }
     },
     "rules": {
-      "prettier-vue/prettier": "error"
+      "prettier-vue/prettier": "error",
+      "import/no-extraneous-dependencies": ["error", {
+          "devDependencies": true
+        }
+      ]
+
     }
 }
